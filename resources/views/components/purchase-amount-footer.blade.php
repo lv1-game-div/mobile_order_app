@@ -1,4 +1,4 @@
-<div class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 py-3 px-4 sm:px-6 lg:px-8 z-10">
+<div x-data="{ total: 0 }" @purchase.window="total += $event.detail.productPrice" class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 py-3 px-4 sm:px-6 lg:px-8 z-10">
     <div class="max-w-7xl mx-auto">
         <div class="flex justify-between items-center">
             <div class="flex-shrink-0 mr-4">
